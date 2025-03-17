@@ -25,55 +25,81 @@
             <p>Vous pouvez trouver certains de mes projets sur mon GitHub : <a href="https://github.com/lucadsv">juste ici</a></p>
             <ul>
                 <li><a href="#installation-postes">Installation et configuration de postes de travail sous Linux</a></li>
-                <li><a href="#gestion-bd">Création d'une base de données et gestion des droits en SQL</a></li>
-                <li><a href="#siteweb-CDC">Réalisation d'un site web en html et css respectant un cahier des charges</a></li>
-                <li>
-                    Développement d'un jeu en Python et en Java
-                    <ul>
-                        <li><a href="#jeu-python">En Python</a></li>
-                        <li><a href="#jeu-java">En Java</a></li>
-                    </ul>
-                </li>
-                <li><a href="#developpement-ia">Développement d'une IA en Python</a></li>
-                <li><a href="#analyse-excel-oracle">Analyse de données avec Excel et Oracle SQL</a></li>
+                <li><a href="#jeu-java">Développement d'un jeu en Java</a></li>
+                <li><a href="#analyse-excel-oracle">Création et gestion d'une BD, analyse de données avec Excel et Oracle SQL</a></li>
                 <li><a href="#plateforme-web-dynamique">Conception et réalisation d'une plateforme web dynamique en HTML, CSS, PHP et JavaScript installé sur un RPi</a></li>
             </ul>
         </div>
         <div class="projets">
             <div class="projet" id="installation-postes">
                 <h2>Installation et configuration de postes de travail sous Linux</h2>
-                <p>lorem ipsum</p>
+                <p>
+                    Ce projet consistait à préparer et configurer un poste de travail sous Linux en partant de zéro.
+                    Pour cela, j’ai d’abord créé une clé USB bootable avec une distribution Linux adaptée, puis j’ai procédé
+                    à l’installation complète du système sur le poste. Ensuite, j’ai mis en place un environnement de
+                    développement en installant les outils essentiels, dont Docker, permettant de gérer des conteneurs
+                    applicatifs pour des déploiements simplifiés et isolés. Enfin, j’ai effectué des configurations spécifiques
+                    du poste, incluant la gestion des utilisateurs, les réglages de sécurité et l’optimisation des performances du système.
+                </p>
             </div>
-            <div class="projet" id="gestion-bd">
-                <h2>Installation et configuration de postes de travail sous Linux</h2>
-                <p>lorem ipsum</p>
-            </div>
-            <div class="projet" id="siteweb-CDC">
-                <h2>Installation et configuration de postes de travail sous Linux</h2>
-                <p>lorem ipsum</p>
-            </div>
-            <div class="projet">
-                <h2>Développement d'un jeu en Python et en Java</h2>
-                <div class="subprojet" id="jeu-python">
-                    <h2>En Python</h2>
-                    <p>lorem ipsum</p>
+            <div class="projet" id="jeu-java">
+                <h2>Développement d'un jeu en Java</h2>
+                <p>
+                    Ce projet consistait à réaliser un jeu interactif en Java.
+                    L'utilisateur pouvait choisir son scénario et avait pour objectif de replacer les cristaux dans leurs temples
+                    respectifs le plus rapidement possible. Dans ce projet, je devais également implémenter deux algorithmes
+                    spécifiques : le tri heuristique et le tri par sélection.
+                    Comme on peut le voir sur les images ci-dessous, j'ai implémenté un menu d'accueil lors du lancement du jeu
+                    afin d'accéder ensuite à l'interface du jeu.
+                </p>
+                <div class="imgProjet">
+                    <img src="../photos/menuJeuJava.png" alt="Menu du Jeu Java">
+                    <img src="../photos/jeuJava.png" alt="Jeu Java">
                 </div>
-                <div class="subprojet" id="jeu-java">
-                    <h2>En Java</h2>
-                    <p>lorem ipsum</p>
-                </div>
-            </div>
-            <div class="projet" id="developpement-ia">
-                <h2>Développement d'une IA en Python</h2>
-                <p>lorem ipsum</p>
             </div>
             <div class="projet" id="analyse-excel-oracle">
                 <h2>Analyse de données avec Excel et Oracle SQL</h2>
-                <p>lorem ipsum</p>
+                <p>
+                    Dans ce projet, j’ai conçu et géré une base de données Oracle SQL en respectant un modèle relationnel structuré.
+                    Une fois les données stockées et organisées, j’ai réalisé une analyse approfondie via des requêtes SQL complexes,
+                    permettant d’extraire des informations précises et pertinentes. L’analyse des données a ensuite été poussée plus
+                    loin avec Excel, en utilisant des tableaux croisés dynamiques et des formules avancées pour générer des visualisations
+                    claires et compréhensibles. Enfin, j’ai créé des graphiques complexes pour interpréter les tendances et assurer
+                    une vérification rigoureuse des résultats obtenus grâce aux requêtes SQL.
+                </p>
             </div>
             <div class="projet" id="plateforme-web-dynamique">
                 <h2>Conception et réalisation d'une plateforme web dynamique en HTML, CSS, PHP et JavaScript installé sur un RPi</h2>
-                <p>lorem ipsum</p>
+                <p>
+                    Ce projet avait pour but de développer une plateforme web permettant d’effectuer divers calculs mathématiques
+                    et statistiques. Hébergée sur un serveur Apache/MySQL installé sur un Raspberry Pi, la plateforme prenait
+                    en charge différents utilisateurs : administrateurs et visiteurs.
+                    <br><br>
+                    L’application web comportait plusieurs modules de calculs, notamment :
+                    <ul>
+                        <li>Un module de probabilités : mise en place de la loi inverse gaussienne.</li>
+                        <li>Un module de cryptographie : implémentation de l’algorithme RC4, permettant de chiffrer et déchiffrer des données.</li>
+                        <li>Un module polynôme : calcul des racines réelles et complexes d’un polynôme.</li>
+                        <li>Gestion des utilisateurs : les administrateurs pouvaient ajouter des utilisateurs via un fichier CSV
+                            et exporter les données sous le même format.
+                        </li>
+                        <li>
+                            Sécurisation et gestion des accès : mise en place d’un système de connexion avec gestion des rôles et
+                            suivi des logs pour assurer la traçabilité des actions.
+                        </li>
+                    </ul>
+                    <br>
+                    L’ensemble du projet était versionné sur GitHub et suivi par un cahier des charges précis. La plateforme devait
+                    être fonctionnelle, ergonomique et offrir une interface fluide pour les utilisateurs.
+                    <br><br>
+                    Vous pouvez trouver ce projet et le télécharger juste ici :
+                    <a href="https://github.com/PJLD/SAE_Plateforme_de_modules_de_calcul">ici</a>
+                </p>
+                <div class="imgProjet">
+                    <img src="../photos/appWebPHP.png" alt="Application Web en PHP">
+                    <img src="../photos/userAppWebPHP.png" alt="Profil User de l'application Web en PHP">
+                    <img style="" src="../photos/adminwebAppWebPHP.png" alt="Profil adminweb de l'application Web en PHP">
+                </div>
             </div>
         </div>
     </div>
