@@ -400,26 +400,27 @@ summary {
 .passions {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 40px;
+    padding: 50px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 70%;
+    width: 90%;
     color: black;
 }
 
 .passions h1 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
 .subpassion {
     display: flex;
     justify-content: space-between;
-    gap: 120px;
+    gap: 60px;
+    flex-wrap: nowrap;
 }
 
 .passion-item {
@@ -427,7 +428,8 @@ summary {
     margin-top: 30px;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 100%;
+    max-width: 280px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -437,16 +439,17 @@ summary {
 
 .passion-item img {
     object-fit: cover;
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
     border-radius: 15px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
 .passion-item h2 {
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
