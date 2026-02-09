@@ -2,14 +2,21 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Compétences</title>
   <link rel="stylesheet" href="../css/css.css">
+  <script src="../js/app.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="photoprofil">
             <a href="accueil.html"><img src="../photos/lucadasilva.png" alt="Photo de Profil"></a>
         </div>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
         <ul>
             <li><a href="presentation.html">Présentation</a></li>
             <li><a href="formation.html">Formation</a></li>
@@ -20,11 +27,12 @@
             <li><a href="ambitions.html">Ambitions</a></li>
         </ul>
     </nav>
+    <main class="page">
     <div class="competencesdiv">
-        <div class="competences">
+        <div class="competences" data-reveal>
             <h1>Mes Compétences</h1>
             <ul>
-                <details>
+                <details data-reveal>
                     <summary>Développement Web : HTML, CSS, JavaScript, PHP</summary>
                     <div class="sub-competences">
                         <img src="../photos/html.png" alt="HTML">
@@ -33,7 +41,7 @@
                         <img src="../photos/php.png" alt="PHP">
                     </div>
                 </details>
-                <details>
+                <details data-reveal>
                     <summary>Programmation : Java, Python, notions en C</summary>
                     <div class="sub-competences">
                         <img src="../photos/java.png" alt="Java">
@@ -41,20 +49,20 @@
                         <img src="../photos/langage-c.png" alt="Langage C">
                     </div>
                 </details>
-                <details>
+                <details data-reveal>
                     <summary>Base de Données : MySQL, Oracle, SQL</summary>
                     <div class="sub-competences">
                         <img src="../photos/sql.png" alt="SQL">
                         <img src="../photos/oracle.png" alt="Oracle">
                     </div>
                 </details>
-                <details>
+                <details data-reveal>
                     <summary>Gestion de Projet : Méthodes agiles, planification</summary>
                     <div class="sub-competences">
                         <img src="../photos/methodes-agiles.jpg" alt="Méthodes agiles">
                     </div>
                 </details>
-                <details>
+                <details data-reveal>
                     <summary>Environnements de Développement : IntelliJ, NetBeans, Git</summary>
                     <div class="sub-competences">
                         <img src="../photos/intelliJ.png" alt="IntelliJ">
@@ -62,7 +70,7 @@
                         <img src="../photos/git.png" alt="Git">
                     </div>
                 </details>
-                <details>
+                <details data-reveal>
                     <summary>Systèmes d'Exploitation : Windows, MacOS, Linux</summary>
                     <div class="sub-competences">
                         <img src="../photos/windows.png" alt="Windows">
@@ -70,7 +78,7 @@
                         <img src="../photos/linux.png" alt="Linux">
                     </div>
                 </details>
-                <details>
+                <details data-reveal>
                     <summary>Gestion de Version : Git, GitHub, GitLab</summary>
                     <div class="sub-competences">
                         <img src="../photos/git.png" alt="Git">
@@ -81,6 +89,7 @@
             </ul>
         </div>
     </div>
+    </main>
     <footer>
         <div class="footer">
             © 2025 - Développé par Luca Da Silva | Tous droits réservés

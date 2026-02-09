@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formation</title>
     <link rel="stylesheet" href="../css/css.css">
+    <script src="../js/app.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="photoprofil">
             <a href="accueil.html"><img src="../photos/lucadasilva.png" alt="Photo de Profil"></a>
         </div>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
         <ul>
             <li><a href="presentation.html">Présentation</a></li>
             <li><a href="formation.html">Formation</a></li>
@@ -20,12 +27,13 @@
             <li><a href="ambitions.html">Ambitions</a></li>
         </ul>
     </nav>
+    <main class="page">
     <div class="formationdiv">
-        <div class="formation">
+        <div class="formation" data-reveal>
             <h1>Ma formation</h1>
             <ul>
                 <li>
-                    <div class="saintemariediv">
+                    <div class="saintemariediv" data-reveal>
                         <a href="https://www.saintemarieantony.fr/">
                             <img src="../photos/saintemarieantony.png" alt="Institution Sainte Marie Antony">
                         </a>
@@ -39,7 +47,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="iutvelizydiv">
+                    <div class="iutvelizydiv" data-reveal>
                         <a href="https://www.iut-velizy-rambouillet.uvsq.fr/">
                             <img src="../photos/uvsq.png" alt="IUT de Vélizy-Villacoublay">
                         </a>
@@ -50,6 +58,7 @@
             </ul>
         </div>
     </div>
+    </main>
     <footer>
         <div class="footer">
             © 2025 - Développé par Luca Da Silva | Tous droits réservés

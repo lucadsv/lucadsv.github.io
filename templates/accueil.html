@@ -2,14 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - Luca Da Silva | Accueil</title>
     <link rel="stylesheet" href="../css/css.css">
+    <script src="../js/app.js" defer></script>
 </head>
 <body>
 <nav>
     <div class="photoprofil">
         <a href="accueil.html"><img src="../photos/lucadasilva.png" alt="Photo de Profil"></a>
     </div>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     <ul>
         <li><a href="presentation.html">Présentation</a></li>
         <li><a href="formation.html">Formation</a></li>
@@ -20,16 +27,53 @@
         <li><a href="ambitions.html">Ambitions</a></li>
     </ul>
 </nav>
-<div class="accueil">
-    <h1>Luca Da Silva</h1>
-    <h2>Étudiant en BUT Informatique</h2>
-    <p>
-        Je me spécialise dans le développement d'applications et l'exploration des nouvelles technologies.
-        <br><br>
-        Mon objectif : créer des solutions innovantes et efficaces.
-    </p>
-    <a href="presentation.html" class="button">Découvrir mon parcours</a>
-</div>
+<main class="page">
+    <section class="hero" data-reveal>
+        <div class="hero-badges">
+            <span class="hero-badge">BUT Informatique</span>
+            <span class="hero-badge">Full‑stack en devenir</span>
+            <span class="hero-badge">Passion Web & Produit</span>
+        </div>
+        <div class="hero-main">
+            <div class="hero-intro">
+                <p class="hero-kicker">Portfolio 2025 · Développement & Créativité</p>
+                <h1>Luca Da Silva</h1>
+                <h2>Je crée des expériences web élégantes et performantes.</h2>
+                <p>
+                    Je me spécialise dans le développement d'applications et l'exploration des nouvelles technologies.
+                    Mon objectif : construire des solutions utiles, belles et efficaces.
+                </p>
+                <div class="hero-actions">
+                    <a href="presentation.html" class="button">Découvrir mon parcours</a>
+                    <a href="projet.html" class="button ghost">Voir mes projets</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hero-card-header">
+                    <span>Profil</span>
+                    <span class="hero-chip">Disponible</span>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">4</span>
+                        <span class="stat-label">Projets présentés</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">1</span>
+                        <span class="stat-label">Stage / expérience</span>
+                    </div>
+                </div>
+                <div class="hero-tags">
+                    <span>JavaScript</span>
+                    <span>Java</span>
+                    <span>PHP</span>
+                    <span>SQL</span>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 <footer>
     <div class="footer">
         © 2025 - Développé par Luca Da Silva | Tous droits réservés

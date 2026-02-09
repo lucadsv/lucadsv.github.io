@@ -2,14 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projet</title>
     <link rel="stylesheet" href="../css/css.css">
+    <script src="../js/app.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="photoprofil">
             <a href="accueil.html"><img src="../photos/lucadasilva.png" alt="Photo de Profil"></a>
         </div>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
         <ul>
             <li><a href="presentation.html">Présentation</a></li>
             <li><a href="formation.html">Formation</a></li>
@@ -20,8 +27,9 @@
             <li><a href="ambitions.html">Ambitions</a></li>
         </ul>
     </nav>
+    <main class="page">
     <div class="projetsdiv">
-        <div class="projets-sommaire">
+        <div class="projets-sommaire" data-reveal>
             <h1>Mes Projets</h1>
             <p>Vous pouvez trouver certains de mes projets sur mon GitHub : <a href="https://github.com/lucadsv">juste ici</a></p>
             <ul>
@@ -31,8 +39,8 @@
                 <li><a href="#plateforme-web-dynamique">Conception et réalisation d'une plateforme web dynamique en HTML, CSS, PHP et JavaScript installé sur un RPi</a></li>
             </ul>
         </div>
-        <div class="projets">
-            <div class="projet" id="installation-postes">
+        <div class="projets" data-reveal>
+            <div class="projet" id="installation-postes" data-reveal>
                 <h2>Installation et configuration de postes de travail sous Linux</h2>
                 <p>
                     Ce projet consistait à préparer et configurer un poste de travail sous Linux en partant de zéro.
@@ -43,7 +51,7 @@
                     du poste, incluant la gestion des utilisateurs, les réglages de sécurité et l’optimisation des performances du système.
                 </p>
             </div>
-            <div class="projet" id="jeu-java">
+            <div class="projet" id="jeu-java" data-reveal>
                 <h2>Développement d'un jeu en Java</h2>
                 <p>
                     Ce projet consistait à réaliser un jeu interactif en Java.
@@ -58,7 +66,7 @@
                     <img src="../photos/jeuJava.png" alt="Jeu Java">
                 </div>
             </div>
-            <div class="projet" id="analyse-excel-oracle">
+            <div class="projet" id="analyse-excel-oracle" data-reveal>
                 <h2>Analyse de données avec Excel et Oracle SQL</h2>
                 <p>
                     Dans ce projet, j’ai conçu et géré une base de données Oracle SQL en respectant un modèle relationnel structuré.
@@ -69,7 +77,7 @@
                     une vérification rigoureuse des résultats obtenus grâce aux requêtes SQL.
                 </p>
             </div>
-            <div class="projet" id="plateforme-web-dynamique">
+            <div class="projet" id="plateforme-web-dynamique" data-reveal>
                 <h2>Conception et réalisation d'une plateforme web dynamique en HTML, CSS, PHP et JavaScript installé sur un RPi</h2>
                 <p>
                     Ce projet avait pour but de développer une plateforme web permettant d’effectuer divers calculs mathématiques
@@ -104,6 +112,7 @@
             </div>
         </div>
     </div>
+    </main>
     <footer>
         <div class="footer">
             © 2025 - Développé par Luca Da Silva | Tous droits réservés

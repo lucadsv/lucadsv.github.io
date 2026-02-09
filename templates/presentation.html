@@ -2,14 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Présentation</title>
     <link rel="stylesheet" href="../css/css.css">
+    <script src="../js/app.js" defer></script>
 </head>
 <body>
 <nav>
     <div class="photoprofil">
         <a href="accueil.html"><img src="../photos/lucadasilva.png" alt="Photo de Profil"></a>
     </div>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     <ul>
         <li><a href="presentation.html">Présentation</a></li>
         <li><a href="formation.html">Formation</a></li>
@@ -20,31 +27,33 @@
         <li><a href="ambitions.html">Ambitions</a></li>
     </ul>
 </nav>
-<div class="presentation">
-    <div class="photopresentation">
-        <img src="../photos/lucadasilva.png" alt="Photo de Profil">
-    </div>
-    <div>
-        <h1>Luca Da Silva</h1>
-        <ul>
-            <li>Né le 03 août 2005 (20 ans)</li>
-            <li>
-                <div class="contact">
+<main class="page">
+    <div class="presentation" data-reveal>
+        <div class="photopresentation">
+            <img src="../photos/lucadasilva.png" alt="Photo de Profil">
+        </div>
+        <div>
+            <h1>Luca Da Silva</h1>
+            <ul>
+                <li>Né le 03 août 2005 (20 ans)</li>
+                <li>
+                <a class="contact" href="mailto:lukds.dasilva@gmail.com">
                     Me contacter
-                </div>
-                <ul>
-                    <li>Adresse 1</li>
-                    <li>Adresse 2</li>
-                </ul>
-            </li>
-            <li>Numéro de téléphone : 67 67 67 67 67</li>
-            <li>Mail : lukds.dasilva@gmail.com</li>
-        </ul>
+                </a>
+                    <ul>
+                        <li>Adresse 1</li>
+                        <li>Adresse 2</li>
+                    </ul>
+                </li>
+                <li>Numéro de téléphone : 67 67 67 67 67</li>
+                <li>Mail : lukds.dasilva@gmail.com</li>
+            </ul>
+        </div>
+        <div class="datepresentation">
+            <p>Date : 27 novembre 2025</p>
+        </div>
     </div>
-    <div class="datepresentation">
-        <p>Date : 27 novembre 2025</p>
-    </div>
-</div>
+</main>
 <footer>
     <div class="footer">
         © 2025 - Développé par Luca Da Silva | Tous droits réservés
