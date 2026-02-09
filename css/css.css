@@ -220,6 +220,63 @@ nav ul li a.active {
     width: 100%;
 }
 
+.page-hero {
+    width: min(900px, 100%);
+    padding: clamp(20px, 3vw, 28px) clamp(24px, 4vw, 36px);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    display: grid;
+    gap: 12px;
+}
+
+.page-kicker {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.page-hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 3.8vw, 36px);
+}
+
+.page-hero p {
+    color: var(--ink-dim);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.page-hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.page-hero-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.page-hero-actions .button {
+    margin-top: 0;
+}
+
+.page-hero-badges span {
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--ink-dim);
+}
+
+
 .hero {
     width: min(1100px, 100%);
     padding: clamp(32px, 5vw, 64px);
@@ -328,6 +385,45 @@ nav ul li a.active {
 
 .hero-actions .button {
     margin-top: 0;
+}
+
+.highlights {
+    width: min(1100px, 100%);
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
+    transition: transform var(--speed-fast), box-shadow var(--speed-fast);
+}
+
+.highlight-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.4);
+}
+
+.highlight-card span {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.highlight-card h3 {
+    font-size: 20px;
+}
+
+.highlight-card p {
+    color: var(--ink-dim);
+    font-size: 14px;
 }
 
 .button {

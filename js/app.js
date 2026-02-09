@@ -74,6 +74,7 @@
         window.addEventListener('mousemove', handleMove, { passive: true });
     }
 
+
     const projectLinks = document.querySelectorAll('.projets-sommaire a[href^="#"]');
     const projectCards = Array.from(document.querySelectorAll('.projet[id]'));
     const projectsWrap = document.querySelector('.projets');
