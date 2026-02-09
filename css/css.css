@@ -418,8 +418,8 @@ summary {
 
 .subpassion {
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
+    justify-content: center;
+    gap: 200px;
     flex-wrap: nowrap;
 }
 
